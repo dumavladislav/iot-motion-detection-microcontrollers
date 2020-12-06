@@ -23,7 +23,7 @@ MQTTLightControl::MQTTLightControl(/*char *devId, */char *mqttServer, int mqttPo
   Serial.print("Device ID");
   Serial.println(deviceSettings.deviceId.c_str());
   mqttClient = new MQTTClient((char*)(deviceSettings.deviceId.c_str()));
-  mqttClient->init(mqttServer, mqttPort, wifiConnect->getNetworkClient());
+  mqttClient->init(mqttServer, mqttPort, wifiConnect->getNetworkClient(), PERIOD_MQTT_KEEPALIVE);
   setState(LOW);
   // setDefaultPresets();
   resetTimer();

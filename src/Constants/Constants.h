@@ -23,8 +23,8 @@
 
 // PERIODS
 #define PERIOD_ILLUMINATION_READ 10     // seconds
-#define PERIOD_MQTT_KEEPALIVE 10        // milliseconds
+#define PERIOD_MQTT_KEEPALIVE 60        // milliseconds
 
-#define DEVICE_ID "MSH"
+#define DEVICE_ID "MSHD"
 
 
