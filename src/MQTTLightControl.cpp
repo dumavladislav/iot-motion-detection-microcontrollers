@@ -27,7 +27,7 @@ MQTTLightControl::MQTTLightControl(/*char *devId, */char *mqttServer, int mqttPo
   setState(LOW);
   // setDefaultPresets();
   resetTimer();
-  oled.init();
+  oled.init(25);
 }
 
 DeviceSettings MQTTLightControl::getSettings() {
